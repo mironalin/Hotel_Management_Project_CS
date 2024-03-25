@@ -1,6 +1,6 @@
-﻿namespace HotelProject
+﻿namespace HotelProject.Forms
 {
-    partial class MainForm
+    partial class ClientsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // MainForm
+            // ClientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1075, 577);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hotel Management";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "ClientsForm";
+            this.Text = "Clients";
             this.ResumeLayout(false);
 
         }
@@ -48,4 +44,3 @@
         #endregion
     }
 }
-

@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HotelProject
+namespace HotelProject.Forms
 {
-    public partial class MainForm : Form
+    public partial class ReservationsForm : Form
     {
-        public MainForm()
+        public ReservationsForm()
         {
             InitializeComponent();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
