@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelProject.Forms
 {
-    public partial class DashboardForm : Form
+    public partial class ReservationsFormResponsive : Form
     {
-        public DashboardForm()
+        public ReservationsFormResponsive()
         {
             InitializeComponent();
         }

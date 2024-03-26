@@ -1,6 +1,6 @@
 ﻿namespace HotelProject.Forms
 {
-    partial class DashboardForm
+    partial class DashboardFormResponsive
     {
         /// <summary>
         /// Required designer variable.
