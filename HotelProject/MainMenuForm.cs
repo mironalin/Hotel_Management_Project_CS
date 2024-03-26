@@ -103,25 +103,25 @@ namespace HotelProject
         private void iconButtonRooms_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Colors.color1);
-            OpenChildForm(new RoomsForm());
+            OpenChildForm(new RoomsFormResponsive());
         }
 
         private void iconButtonClients_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Colors.color2);
-            OpenChildForm(new ClientsForm());
+            OpenChildForm(new ClientsFormResponsive());
         }
 
         private void iconButtonReservations_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Colors.color3);
-            OpenChildForm(new ReservationsForm());
+            OpenChildForm(new ReservationsFormResponsive());
         }
 
         private void iconButtonDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Colors.color4);
-            OpenChildForm(new DashboardForm());
+            OpenChildForm(new DashboardFormResponsive());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -176,6 +176,26 @@ namespace HotelProject
             }
 
             base.WndProc(ref m);
+        }
+
+        private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/mironalin/Hotel_Management_Project_CS");
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -54,11 +54,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="Forms\DashboardForm.cs">
+    <Compile Include="Forms\ClientsFormResponsive.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DashboardForm.Designer.cs">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
+    <Compile Include="Forms\ClientsFormResponsive.Designer.cs">
+      <DependentUpon>ClientsFormResponsive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardFormResponsive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardFormResponsive.Designer.cs">
+      <DependentUpon>DashboardFormResponsive.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -66,39 +72,33 @@
     <Compile Include="MainMenuForm.Designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ClientsForm.cs">
+    <Compile Include="Forms\ReservationsFormResponsive.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ClientsForm.Designer.cs">
-      <DependentUpon>ClientsForm.cs</DependentUpon>
+    <Compile Include="Forms\ReservationsFormResponsive.Designer.cs">
+      <DependentUpon>ReservationsFormResponsive.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ReservationsForm.cs">
+    <Compile Include="Forms\RoomsFormResponsive.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ReservationsForm.Designer.cs">
-      <DependentUpon>ReservationsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\RoomsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RoomsForm.Designer.cs">
-      <DependentUpon>RoomsForm.cs</DependentUpon>
+    <Compile Include="Forms\RoomsFormResponsive.Designer.cs">
+      <DependentUpon>RoomsFormResponsive.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="Room.cs" />
-    <EmbeddedResource Include="Forms\ClientsForm.resx">
-      <DependentUpon>ClientsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ClientsFormResponsive.resx">
+      <DependentUpon>ClientsFormResponsive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DashboardForm.resx">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DashboardFormResponsive.resx">
+      <DependentUpon>DashboardFormResponsive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ReservationsForm.resx">
-      <DependentUpon>ReservationsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ReservationsFormResponsive.resx">
+      <DependentUpon>ReservationsFormResponsive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RoomsForm.resx">
-      <DependentUpon>RoomsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RoomsFormResponsive.resx">
+      <DependentUpon>RoomsFormResponsive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
