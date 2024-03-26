@@ -10,14 +10,14 @@ namespace HotelProject
     {
         public int RoomNumber { get; set; }
         public string RoomType { get; set; }
-        public decimal RoomPrice { get; set; }
+        public int RoomPhone { get; set; }
         public string RoomStatus { get; set; }
 
-        public Room(int roomNumber, string roomType, decimal roomPrice, string roomStatus)
+        public Room(int roomNumber, string roomType, int roomPhone, string roomStatus)
         {
             RoomNumber = roomNumber;
             RoomType = roomType;
-            RoomPrice = roomPrice;
+            RoomPhone = roomPhone;
             RoomStatus = roomStatus;
         }
     }

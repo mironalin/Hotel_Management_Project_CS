@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HotelProject.Forms
 {
-    public partial class RoomsForm : Form
+    public partial class RoomsFormResponsive : Form
     {
-        public RoomsForm()
+        public RoomsFormResponsive()
         {
             InitializeComponent();
+        }
+
+        private void labelRoomNumber_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
