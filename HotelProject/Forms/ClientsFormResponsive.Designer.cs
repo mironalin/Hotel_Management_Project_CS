@@ -421,6 +421,7 @@
             this.ClientPhone,
             this.ClientEmail});
             this.listViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewClients.FullRowSelect = true;
             this.listViewClients.HideSelection = false;
             this.listViewClients.Location = new System.Drawing.Point(14, 14);
             this.listViewClients.Name = "listViewClients";

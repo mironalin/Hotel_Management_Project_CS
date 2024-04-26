@@ -16,5 +16,30 @@ namespace HotelProject.Forms
         {
             InitializeComponent();
         }
+
+        private void lblCheckInDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpCheckInDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRoom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblReservationID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
