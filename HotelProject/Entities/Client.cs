@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
-    internal class Client
+    public class Client
     {
         public int ClientID {  get; set; }
         public string ClientFirstName { get; set; }
@@ -14,6 +14,8 @@ namespace HotelProject
         public string ClientAddress { get; set; }
         public string ClientPhone { get; set; }
         public string ClientEmail { get; set; }
+
+        public Client() { }
 
         public Client(int clientID, string clientFirstName, string clientLastName, string clientAddress, string clientPhone, string clientEmail)
         {

@@ -41,5 +41,20 @@ namespace HotelProject.Forms
         {
 
         }
+
+        private void panelBottomRoom_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

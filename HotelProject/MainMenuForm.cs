@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media;
 using FontAwesome.Sharp;
+using HotelProject.Entities;
 using HotelProject.Forms;
 using Color = System.Drawing.Color;
 
@@ -17,10 +18,20 @@ namespace HotelProject
 {
     public partial class MainForm : Form
     {
+        // Remove flickering when opening and closing child forms
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParam = base.CreateParams;
+                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                return handleParam;
+            }
+        }
+
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-
         public MainForm()
         {
             InitializeComponent();
@@ -79,7 +90,6 @@ namespace HotelProject
             {
                 currentChildForm.Close();
             }
-
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -99,11 +109,11 @@ namespace HotelProject
             iconCurrentChildForm.IconColor = Color.DarkSlateGray;
             labelTitleChildForm.Text = "Home";
         }
-
         private void iconButtonRooms_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Colors.color1);
-            OpenChildForm(new RoomsFormResponsive());
+            RoomsFormResponsive RoomForm = new RoomsFormResponsive();
+            OpenChildForm(RoomForm);
         }
 
         private void iconButtonClients_Click(object sender, EventArgs e)
@@ -178,22 +188,7 @@ namespace HotelProject
             base.WndProc(ref m);
         }
 
-        private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/mironalin/Hotel_Management_Project_CS");
-        }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconPictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconPictureBox1_Click_2(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }

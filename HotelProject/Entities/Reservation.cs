@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
-    internal class Reservation
+    public class Reservation
     {
         public int ReservationID { get; set; }
         public Client Client { get; set; }
         public Room Room { get; set; }
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set;}
+
+        public Reservation()
+        {
+            CheckInDate = DateTime.Now;
+            CheckOutDate = DateTime.Now;
+        }
 
         public Reservation(int reservationID, Client client, Room room, DateTime checkInDate, DateTime checkOutDate)
         {

@@ -28,136 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelBottomClient = new System.Windows.Forms.Panel();
-            this.labelClearClientDetails = new System.Windows.Forms.Label();
-            this.labelDeleteClient = new System.Windows.Forms.Label();
-            this.labelUpdateClient = new System.Windows.Forms.Label();
-            this.labelSaveClient = new System.Windows.Forms.Label();
+            this.panelTopRoom = new System.Windows.Forms.Panel();
+            this.dataGridView_Client = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.panelBottomRoom = new System.Windows.Forms.Panel();
+            this.labelClearClientRoom = new System.Windows.Forms.Label();
+            this.labelDeleteRoom = new System.Windows.Forms.Label();
+            this.labelUpdateRoom = new System.Windows.Forms.Label();
+            this.labelSaveRoom = new System.Windows.Forms.Label();
             this.btnClearClientDetails = new FontAwesome.Sharp.IconButton();
             this.btnDeleteClient = new FontAwesome.Sharp.IconButton();
             this.btnUpdateClient = new FontAwesome.Sharp.IconButton();
             this.btnSaveClient = new FontAwesome.Sharp.IconButton();
-            this.labelClientEmail = new System.Windows.Forms.Label();
-            this.labelClientPhone = new System.Windows.Forms.Label();
-            this.labelClientAddress = new System.Windows.Forms.Label();
-            this.labelClientLastName = new System.Windows.Forms.Label();
-            this.labelClientFirstName = new System.Windows.Forms.Label();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ClientID = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientID = new System.Windows.Forms.Label();
-            this.textBoxClientEmail = new System.Windows.Forms.TextBox();
-            this.textBoxClientPhone = new System.Windows.Forms.TextBox();
-            this.textBoxClientAddress = new System.Windows.Forms.TextBox();
-            this.textBoxClientLastName = new System.Windows.Forms.TextBox();
-            this.textBoxClientFirstName = new System.Windows.Forms.TextBox();
-            this.textBoxClientID = new System.Windows.Forms.TextBox();
-            this.panelTopClient = new System.Windows.Forms.Panel();
-            this.listViewClients = new System.Windows.Forms.ListView();
-            this.placeholder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientFirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientLastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ClientEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelClientFirstName = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelClientLastName = new System.Windows.Forms.Label();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelClientEmail = new System.Windows.Forms.Label();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelClientAddress = new System.Windows.Forms.Label();
+            this.labelClientPhone = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panelBottomClient.SuspendLayout();
-            this.panelTopClient.SuspendLayout();
+            this.panelTopRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).BeginInit();
+            this.panelBottomRoom.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.panelBottomClient, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panelTopClient, 0, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panelTopRoom, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelBottomRoom, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.22222F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.77778F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 500);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // panelBottomClient
+            // panelTopRoom
             // 
-            this.panelBottomClient.Controls.Add(this.labelClearClientDetails);
-            this.panelBottomClient.Controls.Add(this.labelDeleteClient);
-            this.panelBottomClient.Controls.Add(this.labelUpdateClient);
-            this.panelBottomClient.Controls.Add(this.labelSaveClient);
-            this.panelBottomClient.Controls.Add(this.btnClearClientDetails);
-            this.panelBottomClient.Controls.Add(this.btnDeleteClient);
-            this.panelBottomClient.Controls.Add(this.btnUpdateClient);
-            this.panelBottomClient.Controls.Add(this.btnSaveClient);
-            this.panelBottomClient.Controls.Add(this.labelClientEmail);
-            this.panelBottomClient.Controls.Add(this.labelClientPhone);
-            this.panelBottomClient.Controls.Add(this.labelClientAddress);
-            this.panelBottomClient.Controls.Add(this.labelClientLastName);
-            this.panelBottomClient.Controls.Add(this.labelClientFirstName);
-            this.panelBottomClient.Controls.Add(this.labelClientID);
-            this.panelBottomClient.Controls.Add(this.textBoxClientEmail);
-            this.panelBottomClient.Controls.Add(this.textBoxClientPhone);
-            this.panelBottomClient.Controls.Add(this.textBoxClientAddress);
-            this.panelBottomClient.Controls.Add(this.textBoxClientLastName);
-            this.panelBottomClient.Controls.Add(this.textBoxClientFirstName);
-            this.panelBottomClient.Controls.Add(this.textBoxClientID);
-            this.panelBottomClient.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBottomClient.Location = new System.Drawing.Point(3, 254);
-            this.panelBottomClient.Name = "panelBottomClient";
-            this.panelBottomClient.Size = new System.Drawing.Size(994, 243);
-            this.panelBottomClient.TabIndex = 0;
+            this.panelTopRoom.Controls.Add(this.dataGridView_Client);
+            this.panelTopRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTopRoom.Location = new System.Drawing.Point(3, 3);
+            this.panelTopRoom.Name = "panelTopRoom";
+            this.panelTopRoom.Padding = new System.Windows.Forms.Padding(14);
+            this.panelTopRoom.Size = new System.Drawing.Size(994, 244);
+            this.panelTopRoom.TabIndex = 0;
             // 
-            // labelClearClientDetails
+            // dataGridView_Client
             // 
-            this.labelClearClientDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClearClientDetails.AutoSize = true;
-            this.labelClearClientDetails.BackColor = System.Drawing.Color.Transparent;
-            this.labelClearClientDetails.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClearClientDetails.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClearClientDetails.Location = new System.Drawing.Point(625, 211);
-            this.labelClearClientDetails.Name = "labelClearClientDetails";
-            this.labelClearClientDetails.Size = new System.Drawing.Size(34, 14);
-            this.labelClearClientDetails.TabIndex = 41;
-            this.labelClearClientDetails.Text = "Clear";
+            this.dataGridView_Client.AllowUserToAddRows = false;
+            this.dataGridView_Client.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Client.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_Client.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Client.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_Client.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Client.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView_Client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_Client.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Client.Location = new System.Drawing.Point(14, 14);
+            this.dataGridView_Client.Name = "dataGridView_Client";
+            this.dataGridView_Client.ReadOnly = true;
+            this.dataGridView_Client.RowHeadersVisible = false;
+            this.dataGridView_Client.Size = new System.Drawing.Size(966, 216);
+            this.dataGridView_Client.TabIndex = 0;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_Client.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Height = 23;
+            this.dataGridView_Client.ThemeStyle.ReadOnly = true;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // labelDeleteClient
+            // panelBottomRoom
             // 
-            this.labelDeleteClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelDeleteClient.AutoSize = true;
-            this.labelDeleteClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelDeleteClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDeleteClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelDeleteClient.Location = new System.Drawing.Point(528, 211);
-            this.labelDeleteClient.Name = "labelDeleteClient";
-            this.labelDeleteClient.Size = new System.Drawing.Size(40, 14);
-            this.labelDeleteClient.TabIndex = 40;
-            this.labelDeleteClient.Text = "Delete";
+            this.panelBottomRoom.Controls.Add(this.guna2TextBox3);
+            this.panelBottomRoom.Controls.Add(this.labelClientEmail);
+            this.panelBottomRoom.Controls.Add(this.guna2TextBox4);
+            this.panelBottomRoom.Controls.Add(this.guna2TextBox5);
+            this.panelBottomRoom.Controls.Add(this.labelClientAddress);
+            this.panelBottomRoom.Controls.Add(this.labelClientPhone);
+            this.panelBottomRoom.Controls.Add(this.guna2TextBox1);
+            this.panelBottomRoom.Controls.Add(this.labelClientLastName);
+            this.panelBottomRoom.Controls.Add(this.labelClearClientRoom);
+            this.panelBottomRoom.Controls.Add(this.labelDeleteRoom);
+            this.panelBottomRoom.Controls.Add(this.labelUpdateRoom);
+            this.panelBottomRoom.Controls.Add(this.labelSaveRoom);
+            this.panelBottomRoom.Controls.Add(this.btnClearClientDetails);
+            this.panelBottomRoom.Controls.Add(this.btnDeleteClient);
+            this.panelBottomRoom.Controls.Add(this.btnUpdateClient);
+            this.panelBottomRoom.Controls.Add(this.btnSaveClient);
+            this.panelBottomRoom.Controls.Add(this.guna2TextBox2);
+            this.panelBottomRoom.Controls.Add(this.guna2ClientID);
+            this.panelBottomRoom.Controls.Add(this.labelClientID);
+            this.panelBottomRoom.Controls.Add(this.labelClientFirstName);
+            this.panelBottomRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottomRoom.Location = new System.Drawing.Point(3, 253);
+            this.panelBottomRoom.Name = "panelBottomRoom";
+            this.panelBottomRoom.Size = new System.Drawing.Size(994, 244);
+            this.panelBottomRoom.TabIndex = 1;
             // 
-            // labelUpdateClient
+            // labelClearClientRoom
             // 
-            this.labelUpdateClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelUpdateClient.AutoSize = true;
-            this.labelUpdateClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelUpdateClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpdateClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelUpdateClient.Location = new System.Drawing.Point(434, 211);
-            this.labelUpdateClient.Name = "labelUpdateClient";
-            this.labelUpdateClient.Size = new System.Drawing.Size(45, 14);
-            this.labelUpdateClient.TabIndex = 39;
-            this.labelUpdateClient.Text = "Update";
+            this.labelClearClientRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelClearClientRoom.AutoSize = true;
+            this.labelClearClientRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelClearClientRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClearClientRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelClearClientRoom.Location = new System.Drawing.Point(619, 216);
+            this.labelClearClientRoom.Name = "labelClearClientRoom";
+            this.labelClearClientRoom.Size = new System.Drawing.Size(34, 14);
+            this.labelClearClientRoom.TabIndex = 49;
+            this.labelClearClientRoom.Text = "Clear";
             // 
-            // labelSaveClient
+            // labelDeleteRoom
             // 
-            this.labelSaveClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelSaveClient.AutoSize = true;
-            this.labelSaveClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelSaveClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSaveClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSaveClient.Location = new System.Drawing.Point(358, 211);
-            this.labelSaveClient.Name = "labelSaveClient";
-            this.labelSaveClient.Size = new System.Drawing.Size(32, 14);
-            this.labelSaveClient.TabIndex = 38;
-            this.labelSaveClient.Text = "Save";
+            this.labelDeleteRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelDeleteRoom.AutoSize = true;
+            this.labelDeleteRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelDeleteRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDeleteRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelDeleteRoom.Location = new System.Drawing.Point(522, 216);
+            this.labelDeleteRoom.Name = "labelDeleteRoom";
+            this.labelDeleteRoom.Size = new System.Drawing.Size(40, 14);
+            this.labelDeleteRoom.TabIndex = 48;
+            this.labelDeleteRoom.Text = "Delete";
+            // 
+            // labelUpdateRoom
+            // 
+            this.labelUpdateRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelUpdateRoom.AutoSize = true;
+            this.labelUpdateRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelUpdateRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpdateRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelUpdateRoom.Location = new System.Drawing.Point(428, 216);
+            this.labelUpdateRoom.Name = "labelUpdateRoom";
+            this.labelUpdateRoom.Size = new System.Drawing.Size(45, 14);
+            this.labelUpdateRoom.TabIndex = 47;
+            this.labelUpdateRoom.Text = "Update";
+            // 
+            // labelSaveRoom
+            // 
+            this.labelSaveRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelSaveRoom.AutoSize = true;
+            this.labelSaveRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelSaveRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaveRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSaveRoom.Location = new System.Drawing.Point(352, 216);
+            this.labelSaveRoom.Name = "labelSaveRoom";
+            this.labelSaveRoom.Size = new System.Drawing.Size(32, 14);
+            this.labelSaveRoom.TabIndex = 46;
+            this.labelSaveRoom.Text = "Save";
             // 
             // btnClearClientDetails
             // 
@@ -174,10 +236,10 @@
             this.btnClearClientDetails.IconColor = System.Drawing.Color.Gainsboro;
             this.btnClearClientDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClearClientDetails.IconSize = 50;
-            this.btnClearClientDetails.Location = new System.Drawing.Point(614, 167);
+            this.btnClearClientDetails.Location = new System.Drawing.Point(608, 172);
             this.btnClearClientDetails.Name = "btnClearClientDetails";
             this.btnClearClientDetails.Size = new System.Drawing.Size(48, 48);
-            this.btnClearClientDetails.TabIndex = 37;
+            this.btnClearClientDetails.TabIndex = 45;
             this.btnClearClientDetails.UseVisualStyleBackColor = false;
             // 
             // btnDeleteClient
@@ -195,10 +257,10 @@
             this.btnDeleteClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnDeleteClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeleteClient.IconSize = 46;
-            this.btnDeleteClient.Location = new System.Drawing.Point(524, 167);
+            this.btnDeleteClient.Location = new System.Drawing.Point(518, 172);
             this.btnDeleteClient.Name = "btnDeleteClient";
             this.btnDeleteClient.Size = new System.Drawing.Size(48, 48);
-            this.btnDeleteClient.TabIndex = 36;
+            this.btnDeleteClient.TabIndex = 44;
             this.btnDeleteClient.UseVisualStyleBackColor = false;
             // 
             // btnUpdateClient
@@ -216,10 +278,10 @@
             this.btnUpdateClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnUpdateClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUpdateClient.IconSize = 50;
-            this.btnUpdateClient.Location = new System.Drawing.Point(434, 167);
+            this.btnUpdateClient.Location = new System.Drawing.Point(428, 172);
             this.btnUpdateClient.Name = "btnUpdateClient";
             this.btnUpdateClient.Size = new System.Drawing.Size(48, 48);
-            this.btnUpdateClient.TabIndex = 35;
+            this.btnUpdateClient.TabIndex = 43;
             this.btnUpdateClient.UseVisualStyleBackColor = false;
             // 
             // btnSaveClient
@@ -236,240 +298,221 @@
             this.btnSaveClient.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
             this.btnSaveClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSaveClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSaveClient.Location = new System.Drawing.Point(349, 167);
+            this.btnSaveClient.Location = new System.Drawing.Point(343, 172);
             this.btnSaveClient.Name = "btnSaveClient";
             this.btnSaveClient.Size = new System.Drawing.Size(48, 48);
-            this.btnSaveClient.TabIndex = 34;
+            this.btnSaveClient.TabIndex = 42;
             this.btnSaveClient.UseVisualStyleBackColor = false;
             // 
-            // labelClientEmail
+            // guna2TextBox2
             // 
-            this.labelClientEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClientEmail.AutoSize = true;
-            this.labelClientEmail.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientEmail.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientEmail.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientEmail.Location = new System.Drawing.Point(591, 116);
-            this.labelClientEmail.Name = "labelClientEmail";
-            this.labelClientEmail.Size = new System.Drawing.Size(79, 16);
-            this.labelClientEmail.TabIndex = 33;
-            this.labelClientEmail.Text = "Client Email";
+            this.guna2TextBox2.Animated = true;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2TextBox2.BorderRadius = 6;
+            this.guna2TextBox2.BorderThickness = 2;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(257, 67);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(155, 25);
+            this.guna2TextBox2.TabIndex = 7;
             // 
-            // labelClientPhone
+            // guna2ClientID
             // 
-            this.labelClientPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClientPhone.AutoSize = true;
-            this.labelClientPhone.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientPhone.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientPhone.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientPhone.Location = new System.Drawing.Point(583, 67);
-            this.labelClientPhone.Name = "labelClientPhone";
-            this.labelClientPhone.Size = new System.Drawing.Size(87, 16);
-            this.labelClientPhone.TabIndex = 32;
-            this.labelClientPhone.Text = "Client Phone";
-            // 
-            // labelClientAddress
-            // 
-            this.labelClientAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClientAddress.AutoSize = true;
-            this.labelClientAddress.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientAddress.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientAddress.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientAddress.Location = new System.Drawing.Point(569, 18);
-            this.labelClientAddress.Name = "labelClientAddress";
-            this.labelClientAddress.Size = new System.Drawing.Size(99, 16);
-            this.labelClientAddress.TabIndex = 31;
-            this.labelClientAddress.Text = "Client Address";
-            // 
-            // labelClientLastName
-            // 
-            this.labelClientLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClientLastName.AutoSize = true;
-            this.labelClientLastName.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientLastName.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientLastName.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientLastName.Location = new System.Drawing.Point(186, 116);
-            this.labelClientLastName.Name = "labelClientLastName";
-            this.labelClientLastName.Size = new System.Drawing.Size(73, 16);
-            this.labelClientLastName.TabIndex = 30;
-            this.labelClientLastName.Text = "Last Name";
-            // 
-            // labelClientFirstName
-            // 
-            this.labelClientFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClientFirstName.AutoSize = true;
-            this.labelClientFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientFirstName.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientFirstName.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientFirstName.Location = new System.Drawing.Point(184, 67);
-            this.labelClientFirstName.Name = "labelClientFirstName";
-            this.labelClientFirstName.Size = new System.Drawing.Size(75, 16);
-            this.labelClientFirstName.TabIndex = 29;
-            this.labelClientFirstName.Text = "First Name";
+            this.guna2ClientID.Animated = true;
+            this.guna2ClientID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ClientID.BorderRadius = 6;
+            this.guna2ClientID.BorderThickness = 2;
+            this.guna2ClientID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2ClientID.DefaultText = "";
+            this.guna2ClientID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2ClientID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2ClientID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2ClientID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2ClientID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ClientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ClientID.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2ClientID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ClientID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ClientID.Location = new System.Drawing.Point(257, 20);
+            this.guna2ClientID.Name = "guna2ClientID";
+            this.guna2ClientID.PasswordChar = '\0';
+            this.guna2ClientID.PlaceholderText = "";
+            this.guna2ClientID.SelectedText = "";
+            this.guna2ClientID.Size = new System.Drawing.Size(155, 25);
+            this.guna2ClientID.TabIndex = 4;
             // 
             // labelClientID
             // 
-            this.labelClientID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelClientID.AutoSize = true;
-            this.labelClientID.BackColor = System.Drawing.Color.Transparent;
-            this.labelClientID.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientID.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClientID.Location = new System.Drawing.Point(200, 18);
+            this.labelClientID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientID.Location = new System.Drawing.Point(189, 25);
             this.labelClientID.Name = "labelClientID";
             this.labelClientID.Size = new System.Drawing.Size(59, 16);
-            this.labelClientID.TabIndex = 28;
+            this.labelClientID.TabIndex = 1;
             this.labelClientID.Text = "Client ID";
             // 
-            // textBoxClientEmail
+            // labelClientFirstName
             // 
-            this.textBoxClientEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientEmail.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientEmail.Location = new System.Drawing.Point(679, 116);
-            this.textBoxClientEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientEmail.Name = "textBoxClientEmail";
-            this.textBoxClientEmail.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientEmail.TabIndex = 27;
+            this.labelClientFirstName.AutoSize = true;
+            this.labelClientFirstName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientFirstName.Location = new System.Drawing.Point(173, 71);
+            this.labelClientFirstName.Name = "labelClientFirstName";
+            this.labelClientFirstName.Size = new System.Drawing.Size(75, 16);
+            this.labelClientFirstName.TabIndex = 0;
+            this.labelClientFirstName.Text = "First Name";
             // 
-            // textBoxClientPhone
+            // guna2TextBox1
             // 
-            this.textBoxClientPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientPhone.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientPhone.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientPhone.Location = new System.Drawing.Point(679, 67);
-            this.textBoxClientPhone.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientPhone.Name = "textBoxClientPhone";
-            this.textBoxClientPhone.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientPhone.TabIndex = 26;
+            this.guna2TextBox1.Animated = true;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2TextBox1.BorderRadius = 6;
+            this.guna2TextBox1.BorderThickness = 2;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(257, 115);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(155, 25);
+            this.guna2TextBox1.TabIndex = 51;
             // 
-            // textBoxClientAddress
+            // labelClientLastName
             // 
-            this.textBoxClientAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientAddress.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientAddress.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientAddress.Location = new System.Drawing.Point(679, 18);
-            this.textBoxClientAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientAddress.Name = "textBoxClientAddress";
-            this.textBoxClientAddress.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientAddress.TabIndex = 25;
+            this.labelClientLastName.AutoSize = true;
+            this.labelClientLastName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientLastName.Location = new System.Drawing.Point(173, 119);
+            this.labelClientLastName.Name = "labelClientLastName";
+            this.labelClientLastName.Size = new System.Drawing.Size(73, 16);
+            this.labelClientLastName.TabIndex = 50;
+            this.labelClientLastName.Text = "Last Name";
             // 
-            // textBoxClientLastName
+            // guna2TextBox3
             // 
-            this.textBoxClientLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientLastName.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientLastName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientLastName.Location = new System.Drawing.Point(266, 116);
-            this.textBoxClientLastName.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientLastName.Name = "textBoxClientLastName";
-            this.textBoxClientLastName.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientLastName.TabIndex = 24;
+            this.guna2TextBox3.Animated = true;
+            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2TextBox3.BorderRadius = 6;
+            this.guna2TextBox3.BorderThickness = 2;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2TextBox3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(683, 115);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(155, 25);
+            this.guna2TextBox3.TabIndex = 57;
             // 
-            // textBoxClientFirstName
+            // labelClientEmail
             // 
-            this.textBoxClientFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientFirstName.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientFirstName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientFirstName.Location = new System.Drawing.Point(266, 67);
-            this.textBoxClientFirstName.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientFirstName.Name = "textBoxClientFirstName";
-            this.textBoxClientFirstName.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientFirstName.TabIndex = 23;
+            this.labelClientEmail.AutoSize = true;
+            this.labelClientEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientEmail.Location = new System.Drawing.Point(593, 119);
+            this.labelClientEmail.Name = "labelClientEmail";
+            this.labelClientEmail.Size = new System.Drawing.Size(79, 16);
+            this.labelClientEmail.TabIndex = 56;
+            this.labelClientEmail.Text = "Client Email";
             // 
-            // textBoxClientID
+            // guna2TextBox4
             // 
-            this.textBoxClientID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.textBoxClientID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClientID.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClientID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxClientID.Location = new System.Drawing.Point(266, 18);
-            this.textBoxClientID.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxClientID.Name = "textBoxClientID";
-            this.textBoxClientID.Size = new System.Drawing.Size(132, 21);
-            this.textBoxClientID.TabIndex = 22;
+            this.guna2TextBox4.Animated = true;
+            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2TextBox4.BorderRadius = 6;
+            this.guna2TextBox4.BorderThickness = 2;
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox4.DefaultText = "";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2TextBox4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.Location = new System.Drawing.Point(683, 67);
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderText = "";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.Size = new System.Drawing.Size(155, 25);
+            this.guna2TextBox4.TabIndex = 55;
             // 
-            // panelTopClient
+            // guna2TextBox5
             // 
-            this.panelTopClient.Controls.Add(this.listViewClients);
-            this.panelTopClient.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTopClient.Location = new System.Drawing.Point(3, 3);
-            this.panelTopClient.Name = "panelTopClient";
-            this.panelTopClient.Padding = new System.Windows.Forms.Padding(14);
-            this.panelTopClient.Size = new System.Drawing.Size(994, 245);
-            this.panelTopClient.TabIndex = 1;
+            this.guna2TextBox5.Animated = true;
+            this.guna2TextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2TextBox5.BorderRadius = 6;
+            this.guna2TextBox5.BorderThickness = 2;
+            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox5.DefaultText = "";
+            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2TextBox5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.Location = new System.Drawing.Point(683, 20);
+            this.guna2TextBox5.Name = "guna2TextBox5";
+            this.guna2TextBox5.PasswordChar = '\0';
+            this.guna2TextBox5.PlaceholderText = "";
+            this.guna2TextBox5.SelectedText = "";
+            this.guna2TextBox5.Size = new System.Drawing.Size(155, 25);
+            this.guna2TextBox5.TabIndex = 54;
             // 
-            // listViewClients
+            // labelClientAddress
             // 
-            this.listViewClients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.listViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listViewClients.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.placeholder,
-            this.ClientID,
-            this.ClientFirstName,
-            this.ClientLastName,
-            this.ClientAddress,
-            this.ClientPhone,
-            this.ClientEmail});
-            this.listViewClients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewClients.FullRowSelect = true;
-            this.listViewClients.HideSelection = false;
-            this.listViewClients.Location = new System.Drawing.Point(14, 14);
-            this.listViewClients.Name = "listViewClients";
-            this.listViewClients.Size = new System.Drawing.Size(966, 217);
-            this.listViewClients.TabIndex = 0;
-            this.listViewClients.UseCompatibleStateImageBehavior = false;
-            this.listViewClients.View = System.Windows.Forms.View.Details;
+            this.labelClientAddress.AutoSize = true;
+            this.labelClientAddress.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientAddress.Location = new System.Drawing.Point(573, 25);
+            this.labelClientAddress.Name = "labelClientAddress";
+            this.labelClientAddress.Size = new System.Drawing.Size(99, 16);
+            this.labelClientAddress.TabIndex = 53;
+            this.labelClientAddress.Text = "Client Address";
             // 
-            // placeholder
+            // labelClientPhone
             // 
-            this.placeholder.Text = "966/ ";
-            this.placeholder.Width = 0;
-            // 
-            // ClientID
-            // 
-            this.ClientID.Text = "Client ID";
-            this.ClientID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientID.Width = 82;
-            // 
-            // ClientFirstName
-            // 
-            this.ClientFirstName.Text = "First Name";
-            this.ClientFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientFirstName.Width = 180;
-            // 
-            // ClientLastName
-            // 
-            this.ClientLastName.Text = "Last Name";
-            this.ClientLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientLastName.Width = 180;
-            // 
-            // ClientAddress
-            // 
-            this.ClientAddress.Text = "Client Address";
-            this.ClientAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientAddress.Width = 180;
-            // 
-            // ClientPhone
-            // 
-            this.ClientPhone.Text = "Client Phone";
-            this.ClientPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientPhone.Width = 180;
-            // 
-            // ClientEmail
-            // 
-            this.ClientEmail.Text = "Client Email";
-            this.ClientEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ClientEmail.Width = 180;
+            this.labelClientPhone.AutoSize = true;
+            this.labelClientPhone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClientPhone.Location = new System.Drawing.Point(585, 71);
+            this.labelClientPhone.Name = "labelClientPhone";
+            this.labelClientPhone.Size = new System.Drawing.Size(87, 16);
+            this.labelClientPhone.TabIndex = 52;
+            this.labelClientPhone.Text = "Client Phone";
             // 
             // ClientsFormResponsive
             // 
@@ -479,13 +522,14 @@
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ClientsFormResponsive";
             this.Text = "Clients";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panelBottomClient.ResumeLayout(false);
-            this.panelBottomClient.PerformLayout();
-            this.panelTopClient.ResumeLayout(false);
+            this.panelTopRoom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).EndInit();
+            this.panelBottomRoom.ResumeLayout(false);
+            this.panelBottomRoom.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -493,35 +537,28 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panelBottomClient;
-        private System.Windows.Forms.Panel panelTopClient;
-        private System.Windows.Forms.Label labelClearClientDetails;
-        private System.Windows.Forms.Label labelDeleteClient;
-        private System.Windows.Forms.Label labelUpdateClient;
-        private System.Windows.Forms.Label labelSaveClient;
+        private System.Windows.Forms.Panel panelTopRoom;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_Client;
+        private System.Windows.Forms.Panel panelBottomRoom;
+        private System.Windows.Forms.Label labelClearClientRoom;
+        private System.Windows.Forms.Label labelDeleteRoom;
+        private System.Windows.Forms.Label labelUpdateRoom;
+        private System.Windows.Forms.Label labelSaveRoom;
         private FontAwesome.Sharp.IconButton btnClearClientDetails;
         private FontAwesome.Sharp.IconButton btnDeleteClient;
         private FontAwesome.Sharp.IconButton btnUpdateClient;
         private FontAwesome.Sharp.IconButton btnSaveClient;
-        private System.Windows.Forms.Label labelClientEmail;
-        private System.Windows.Forms.Label labelClientPhone;
-        private System.Windows.Forms.Label labelClientAddress;
-        private System.Windows.Forms.Label labelClientLastName;
-        private System.Windows.Forms.Label labelClientFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2ClientID;
         private System.Windows.Forms.Label labelClientID;
-        private System.Windows.Forms.TextBox textBoxClientEmail;
-        private System.Windows.Forms.TextBox textBoxClientPhone;
-        private System.Windows.Forms.TextBox textBoxClientAddress;
-        private System.Windows.Forms.TextBox textBoxClientLastName;
-        private System.Windows.Forms.TextBox textBoxClientFirstName;
-        private System.Windows.Forms.TextBox textBoxClientID;
-        private System.Windows.Forms.ListView listViewClients;
-        private System.Windows.Forms.ColumnHeader placeholder;
-        private System.Windows.Forms.ColumnHeader ClientID;
-        private System.Windows.Forms.ColumnHeader ClientFirstName;
-        private System.Windows.Forms.ColumnHeader ClientLastName;
-        private System.Windows.Forms.ColumnHeader ClientAddress;
-        private System.Windows.Forms.ColumnHeader ClientPhone;
-        private System.Windows.Forms.ColumnHeader ClientEmail;
+        private System.Windows.Forms.Label labelClientFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.Label labelClientLastName;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private System.Windows.Forms.Label labelClientEmail;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private System.Windows.Forms.Label labelClientAddress;
+        private System.Windows.Forms.Label labelClientPhone;
     }
 }

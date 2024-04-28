@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
-    internal class Room
+    public class Room
     {
         public int RoomNumber { get; set; }
         public string RoomType { get; set; }
-        public int RoomPhone { get; set; }
+        public string RoomPhone { get; set; }
         public string RoomStatus { get; set; }
 
-        public Room(int roomNumber, string roomType, int roomPhone, string roomStatus)
+        public Room() { }
+
+        public Room(int roomNumber, string roomType, string roomPhone, string roomStatus) : this()
         {
             RoomNumber = roomNumber;
             RoomType = roomType;

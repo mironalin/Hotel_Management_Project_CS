@@ -28,309 +28,195 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.placeholder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReservationID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReservationClient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReservationRoom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReservationCheckInDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReservationCheckOutDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dtpCheckInDate = new System.Windows.Forms.DateTimePicker();
-            this.tbReservationID = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBoxRoomType = new System.Windows.Forms.ComboBox();
-            this.lblReservationID = new System.Windows.Forms.Label();
-            this.lblRoom = new System.Windows.Forms.Label();
-            this.lblClient = new System.Windows.Forms.Label();
-            this.lblCheckInDate = new System.Windows.Forms.Label();
-            this.dtpCheckOutDate = new System.Windows.Forms.DateTimePicker();
-            this.lblCheckOutDate = new System.Windows.Forms.Label();
-            this.labelClearClientDetails = new System.Windows.Forms.Label();
-            this.labelDeleteClient = new System.Windows.Forms.Label();
-            this.labelUpdateClient = new System.Windows.Forms.Label();
-            this.labelSaveClient = new System.Windows.Forms.Label();
+            this.panelTopRoom = new System.Windows.Forms.Panel();
+            this.dataGridView_Reservation = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.panelBottomRoom = new System.Windows.Forms.Panel();
+            this.labelClearClientRoom = new System.Windows.Forms.Label();
+            this.labelDeleteRoom = new System.Windows.Forms.Label();
+            this.labelUpdateRoom = new System.Windows.Forms.Label();
+            this.labelSaveRoom = new System.Windows.Forms.Label();
             this.btnClearClientDetails = new FontAwesome.Sharp.IconButton();
             this.btnDeleteClient = new FontAwesome.Sharp.IconButton();
             this.btnUpdateClient = new FontAwesome.Sharp.IconButton();
             this.btnSaveClient = new FontAwesome.Sharp.IconButton();
+            this.guna2ClientID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelReservation = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelRoom = new System.Windows.Forms.Label();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelClient = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.labelCheckInDate = new System.Windows.Forms.Label();
+            this.labelCheckOutDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelTopRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Reservation)).BeginInit();
+            this.panelBottomRoom.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panelTopRoom, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelBottomRoom, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 500);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // panel1
+            // panelTopRoom
             // 
-            this.panel1.Controls.Add(this.listView1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(14);
-            this.panel1.Size = new System.Drawing.Size(994, 244);
-            this.panel1.TabIndex = 0;
+            this.panelTopRoom.Controls.Add(this.dataGridView_Reservation);
+            this.panelTopRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTopRoom.Location = new System.Drawing.Point(3, 3);
+            this.panelTopRoom.Name = "panelTopRoom";
+            this.panelTopRoom.Padding = new System.Windows.Forms.Padding(14);
+            this.panelTopRoom.Size = new System.Drawing.Size(994, 244);
+            this.panelTopRoom.TabIndex = 0;
             // 
-            // listView1
+            // dataGridView_Reservation
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.placeholder,
-            this.ReservationID,
-            this.ReservationClient,
-            this.ReservationRoom,
-            this.ReservationCheckInDate,
-            this.ReservationCheckOutDate});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.FullRowSelect = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(14, 14);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(966, 216);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.dataGridView_Reservation.AllowUserToAddRows = false;
+            this.dataGridView_Reservation.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Reservation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_Reservation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Reservation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_Reservation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Reservation.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView_Reservation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_Reservation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Reservation.Location = new System.Drawing.Point(14, 14);
+            this.dataGridView_Reservation.Name = "dataGridView_Reservation";
+            this.dataGridView_Reservation.ReadOnly = true;
+            this.dataGridView_Reservation.RowHeadersVisible = false;
+            this.dataGridView_Reservation.Size = new System.Drawing.Size(966, 216);
+            this.dataGridView_Reservation.TabIndex = 0;
+            this.dataGridView_Reservation.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Reservation.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView_Reservation.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_Reservation.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView_Reservation.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_Reservation.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Reservation.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridView_Reservation.ThemeStyle.HeaderStyle.Height = 23;
+            this.dataGridView_Reservation.ThemeStyle.ReadOnly = true;
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_Reservation.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // placeholder
+            // panelBottomRoom
             // 
-            this.placeholder.Text = "";
-            this.placeholder.Width = 0;
+            this.panelBottomRoom.Controls.Add(this.labelCheckOutDate);
+            this.panelBottomRoom.Controls.Add(this.labelCheckInDate);
+            this.panelBottomRoom.Controls.Add(this.guna2DateTimePicker2);
+            this.panelBottomRoom.Controls.Add(this.guna2DateTimePicker1);
+            this.panelBottomRoom.Controls.Add(this.guna2ComboBox2);
+            this.panelBottomRoom.Controls.Add(this.labelClient);
+            this.panelBottomRoom.Controls.Add(this.guna2ComboBox1);
+            this.panelBottomRoom.Controls.Add(this.labelRoom);
+            this.panelBottomRoom.Controls.Add(this.labelClearClientRoom);
+            this.panelBottomRoom.Controls.Add(this.labelDeleteRoom);
+            this.panelBottomRoom.Controls.Add(this.labelUpdateRoom);
+            this.panelBottomRoom.Controls.Add(this.labelSaveRoom);
+            this.panelBottomRoom.Controls.Add(this.btnClearClientDetails);
+            this.panelBottomRoom.Controls.Add(this.btnDeleteClient);
+            this.panelBottomRoom.Controls.Add(this.btnUpdateClient);
+            this.panelBottomRoom.Controls.Add(this.btnSaveClient);
+            this.panelBottomRoom.Controls.Add(this.guna2ClientID);
+            this.panelBottomRoom.Controls.Add(this.labelReservation);
+            this.panelBottomRoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottomRoom.Location = new System.Drawing.Point(3, 253);
+            this.panelBottomRoom.Name = "panelBottomRoom";
+            this.panelBottomRoom.Size = new System.Drawing.Size(994, 244);
+            this.panelBottomRoom.TabIndex = 1;
+            this.panelBottomRoom.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBottomRoom_Paint);
             // 
-            // ReservationID
+            // labelClearClientRoom
             // 
-            this.ReservationID.Text = "Reservation ID";
-            this.ReservationID.Width = 196;
+            this.labelClearClientRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelClearClientRoom.AutoSize = true;
+            this.labelClearClientRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelClearClientRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClearClientRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelClearClientRoom.Location = new System.Drawing.Point(619, 216);
+            this.labelClearClientRoom.Name = "labelClearClientRoom";
+            this.labelClearClientRoom.Size = new System.Drawing.Size(34, 14);
+            this.labelClearClientRoom.TabIndex = 49;
+            this.labelClearClientRoom.Text = "Clear";
             // 
-            // ReservationClient
+            // labelDeleteRoom
             // 
-            this.ReservationClient.Text = "Client";
-            this.ReservationClient.Width = 196;
+            this.labelDeleteRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelDeleteRoom.AutoSize = true;
+            this.labelDeleteRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelDeleteRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDeleteRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelDeleteRoom.Location = new System.Drawing.Point(522, 216);
+            this.labelDeleteRoom.Name = "labelDeleteRoom";
+            this.labelDeleteRoom.Size = new System.Drawing.Size(40, 14);
+            this.labelDeleteRoom.TabIndex = 48;
+            this.labelDeleteRoom.Text = "Delete";
             // 
-            // ReservationRoom
+            // labelUpdateRoom
             // 
-            this.ReservationRoom.Text = "Room";
-            this.ReservationRoom.Width = 196;
+            this.labelUpdateRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelUpdateRoom.AutoSize = true;
+            this.labelUpdateRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelUpdateRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpdateRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelUpdateRoom.Location = new System.Drawing.Point(428, 216);
+            this.labelUpdateRoom.Name = "labelUpdateRoom";
+            this.labelUpdateRoom.Size = new System.Drawing.Size(45, 14);
+            this.labelUpdateRoom.TabIndex = 47;
+            this.labelUpdateRoom.Text = "Update";
             // 
-            // ReservationCheckInDate
+            // labelSaveRoom
             // 
-            this.ReservationCheckInDate.Text = "Check In Date";
-            this.ReservationCheckInDate.Width = 196;
-            // 
-            // ReservationCheckOutDate
-            // 
-            this.ReservationCheckOutDate.Text = "Check Out Date";
-            this.ReservationCheckOutDate.Width = 198;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.labelClearClientDetails);
-            this.panel2.Controls.Add(this.labelDeleteClient);
-            this.panel2.Controls.Add(this.labelUpdateClient);
-            this.panel2.Controls.Add(this.labelSaveClient);
-            this.panel2.Controls.Add(this.btnClearClientDetails);
-            this.panel2.Controls.Add(this.btnDeleteClient);
-            this.panel2.Controls.Add(this.btnUpdateClient);
-            this.panel2.Controls.Add(this.btnSaveClient);
-            this.panel2.Controls.Add(this.lblCheckOutDate);
-            this.panel2.Controls.Add(this.dtpCheckOutDate);
-            this.panel2.Controls.Add(this.lblCheckInDate);
-            this.panel2.Controls.Add(this.lblClient);
-            this.panel2.Controls.Add(this.lblRoom);
-            this.panel2.Controls.Add(this.lblReservationID);
-            this.panel2.Controls.Add(this.dtpCheckInDate);
-            this.panel2.Controls.Add(this.tbReservationID);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.comboBoxRoomType);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 253);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(994, 244);
-            this.panel2.TabIndex = 1;
-            // 
-            // dtpCheckInDate
-            // 
-            this.dtpCheckInDate.CalendarFont = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCheckInDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.dtpCheckInDate.Location = new System.Drawing.Point(197, 118);
-            this.dtpCheckInDate.Name = "dtpCheckInDate";
-            this.dtpCheckInDate.Size = new System.Drawing.Size(232, 23);
-            this.dtpCheckInDate.TabIndex = 66;
-            this.dtpCheckInDate.ValueChanged += new System.EventHandler(this.dtpCheckInDate_ValueChanged);
-            // 
-            // tbReservationID
-            // 
-            this.tbReservationID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbReservationID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.tbReservationID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbReservationID.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbReservationID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbReservationID.Location = new System.Drawing.Point(197, 39);
-            this.tbReservationID.Margin = new System.Windows.Forms.Padding(4);
-            this.tbReservationID.Multiline = true;
-            this.tbReservationID.Name = "tbReservationID";
-            this.tbReservationID.Size = new System.Drawing.Size(132, 23);
-            this.tbReservationID.TabIndex = 65;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 16;
-            this.comboBox1.Location = new System.Drawing.Point(655, 39);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 24);
-            this.comboBox1.TabIndex = 64;
-            // 
-            // comboBoxRoomType
-            // 
-            this.comboBoxRoomType.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBoxRoomType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.comboBoxRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxRoomType.ForeColor = System.Drawing.Color.Gainsboro;
-            this.comboBoxRoomType.FormattingEnabled = true;
-            this.comboBoxRoomType.IntegralHeight = false;
-            this.comboBoxRoomType.ItemHeight = 16;
-            this.comboBoxRoomType.Location = new System.Drawing.Point(426, 39);
-            this.comboBoxRoomType.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBoxRoomType.Name = "comboBoxRoomType";
-            this.comboBoxRoomType.Size = new System.Drawing.Size(132, 24);
-            this.comboBoxRoomType.TabIndex = 63;
-            // 
-            // lblReservationID
-            // 
-            this.lblReservationID.AutoSize = true;
-            this.lblReservationID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblReservationID.Location = new System.Drawing.Point(217, 22);
-            this.lblReservationID.Name = "lblReservationID";
-            this.lblReservationID.Size = new System.Drawing.Size(97, 16);
-            this.lblReservationID.TabIndex = 68;
-            this.lblReservationID.Text = "Reservation ID";
-            this.lblReservationID.Click += new System.EventHandler(this.lblReservationID_Click);
-            // 
-            // lblRoom
-            // 
-            this.lblRoom.AutoSize = true;
-            this.lblRoom.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblRoom.Location = new System.Drawing.Point(471, 18);
-            this.lblRoom.Name = "lblRoom";
-            this.lblRoom.Size = new System.Drawing.Size(42, 16);
-            this.lblRoom.TabIndex = 69;
-            this.lblRoom.Text = "Room";
-            this.lblRoom.Click += new System.EventHandler(this.lblRoom_Click);
-            // 
-            // lblClient
-            // 
-            this.lblClient.AutoSize = true;
-            this.lblClient.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblClient.Location = new System.Drawing.Point(702, 18);
-            this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(43, 16);
-            this.lblClient.TabIndex = 70;
-            this.lblClient.Text = "Client";
-            this.lblClient.Click += new System.EventHandler(this.lblClient_Click);
-            // 
-            // lblCheckInDate
-            // 
-            this.lblCheckInDate.AutoSize = true;
-            this.lblCheckInDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblCheckInDate.Location = new System.Drawing.Point(287, 99);
-            this.lblCheckInDate.Name = "lblCheckInDate";
-            this.lblCheckInDate.Size = new System.Drawing.Size(94, 16);
-            this.lblCheckInDate.TabIndex = 71;
-            this.lblCheckInDate.Text = "Check In Date";
-            this.lblCheckInDate.Click += new System.EventHandler(this.lblCheckInDate_Click);
-            // 
-            // dtpCheckOutDate
-            // 
-            this.dtpCheckOutDate.CalendarFont = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCheckOutDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.dtpCheckOutDate.Location = new System.Drawing.Point(555, 118);
-            this.dtpCheckOutDate.Name = "dtpCheckOutDate";
-            this.dtpCheckOutDate.Size = new System.Drawing.Size(232, 23);
-            this.dtpCheckOutDate.TabIndex = 72;
-            // 
-            // lblCheckOutDate
-            // 
-            this.lblCheckOutDate.AutoSize = true;
-            this.lblCheckOutDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblCheckOutDate.Location = new System.Drawing.Point(625, 99);
-            this.lblCheckOutDate.Name = "lblCheckOutDate";
-            this.lblCheckOutDate.Size = new System.Drawing.Size(106, 16);
-            this.lblCheckOutDate.TabIndex = 73;
-            this.lblCheckOutDate.Text = "Check Out Date";
-            // 
-            // labelClearClientDetails
-            // 
-            this.labelClearClientDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelClearClientDetails.AutoSize = true;
-            this.labelClearClientDetails.BackColor = System.Drawing.Color.Transparent;
-            this.labelClearClientDetails.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClearClientDetails.ForeColor = System.Drawing.Color.Transparent;
-            this.labelClearClientDetails.Location = new System.Drawing.Point(625, 212);
-            this.labelClearClientDetails.Name = "labelClearClientDetails";
-            this.labelClearClientDetails.Size = new System.Drawing.Size(34, 14);
-            this.labelClearClientDetails.TabIndex = 81;
-            this.labelClearClientDetails.Text = "Clear";
-            // 
-            // labelDeleteClient
-            // 
-            this.labelDeleteClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelDeleteClient.AutoSize = true;
-            this.labelDeleteClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelDeleteClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDeleteClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelDeleteClient.Location = new System.Drawing.Point(528, 212);
-            this.labelDeleteClient.Name = "labelDeleteClient";
-            this.labelDeleteClient.Size = new System.Drawing.Size(40, 14);
-            this.labelDeleteClient.TabIndex = 80;
-            this.labelDeleteClient.Text = "Delete";
-            // 
-            // labelUpdateClient
-            // 
-            this.labelUpdateClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelUpdateClient.AutoSize = true;
-            this.labelUpdateClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelUpdateClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpdateClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelUpdateClient.Location = new System.Drawing.Point(434, 212);
-            this.labelUpdateClient.Name = "labelUpdateClient";
-            this.labelUpdateClient.Size = new System.Drawing.Size(45, 14);
-            this.labelUpdateClient.TabIndex = 79;
-            this.labelUpdateClient.Text = "Update";
-            // 
-            // labelSaveClient
-            // 
-            this.labelSaveClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelSaveClient.AutoSize = true;
-            this.labelSaveClient.BackColor = System.Drawing.Color.Transparent;
-            this.labelSaveClient.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSaveClient.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSaveClient.Location = new System.Drawing.Point(358, 212);
-            this.labelSaveClient.Name = "labelSaveClient";
-            this.labelSaveClient.Size = new System.Drawing.Size(32, 14);
-            this.labelSaveClient.TabIndex = 78;
-            this.labelSaveClient.Text = "Save";
+            this.labelSaveRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelSaveRoom.AutoSize = true;
+            this.labelSaveRoom.BackColor = System.Drawing.Color.Transparent;
+            this.labelSaveRoom.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaveRoom.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSaveRoom.Location = new System.Drawing.Point(352, 216);
+            this.labelSaveRoom.Name = "labelSaveRoom";
+            this.labelSaveRoom.Size = new System.Drawing.Size(32, 14);
+            this.labelSaveRoom.TabIndex = 46;
+            this.labelSaveRoom.Text = "Save";
             // 
             // btnClearClientDetails
             // 
@@ -347,10 +233,10 @@
             this.btnClearClientDetails.IconColor = System.Drawing.Color.Gainsboro;
             this.btnClearClientDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClearClientDetails.IconSize = 50;
-            this.btnClearClientDetails.Location = new System.Drawing.Point(614, 170);
+            this.btnClearClientDetails.Location = new System.Drawing.Point(608, 172);
             this.btnClearClientDetails.Name = "btnClearClientDetails";
-            this.btnClearClientDetails.Size = new System.Drawing.Size(48, 45);
-            this.btnClearClientDetails.TabIndex = 77;
+            this.btnClearClientDetails.Size = new System.Drawing.Size(48, 48);
+            this.btnClearClientDetails.TabIndex = 45;
             this.btnClearClientDetails.UseVisualStyleBackColor = false;
             // 
             // btnDeleteClient
@@ -368,10 +254,10 @@
             this.btnDeleteClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnDeleteClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeleteClient.IconSize = 46;
-            this.btnDeleteClient.Location = new System.Drawing.Point(524, 170);
+            this.btnDeleteClient.Location = new System.Drawing.Point(518, 172);
             this.btnDeleteClient.Name = "btnDeleteClient";
-            this.btnDeleteClient.Size = new System.Drawing.Size(48, 45);
-            this.btnDeleteClient.TabIndex = 76;
+            this.btnDeleteClient.Size = new System.Drawing.Size(48, 48);
+            this.btnDeleteClient.TabIndex = 44;
             this.btnDeleteClient.UseVisualStyleBackColor = false;
             // 
             // btnUpdateClient
@@ -389,10 +275,10 @@
             this.btnUpdateClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnUpdateClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUpdateClient.IconSize = 50;
-            this.btnUpdateClient.Location = new System.Drawing.Point(434, 170);
+            this.btnUpdateClient.Location = new System.Drawing.Point(428, 172);
             this.btnUpdateClient.Name = "btnUpdateClient";
-            this.btnUpdateClient.Size = new System.Drawing.Size(48, 45);
-            this.btnUpdateClient.TabIndex = 75;
+            this.btnUpdateClient.Size = new System.Drawing.Size(48, 48);
+            this.btnUpdateClient.TabIndex = 43;
             this.btnUpdateClient.UseVisualStyleBackColor = false;
             // 
             // btnSaveClient
@@ -409,11 +295,176 @@
             this.btnSaveClient.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
             this.btnSaveClient.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSaveClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSaveClient.Location = new System.Drawing.Point(349, 170);
+            this.btnSaveClient.Location = new System.Drawing.Point(343, 172);
             this.btnSaveClient.Name = "btnSaveClient";
-            this.btnSaveClient.Size = new System.Drawing.Size(48, 45);
-            this.btnSaveClient.TabIndex = 74;
+            this.btnSaveClient.Size = new System.Drawing.Size(48, 48);
+            this.btnSaveClient.TabIndex = 42;
             this.btnSaveClient.UseVisualStyleBackColor = false;
+            // 
+            // guna2ClientID
+            // 
+            this.guna2ClientID.Animated = true;
+            this.guna2ClientID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ClientID.BorderRadius = 6;
+            this.guna2ClientID.BorderThickness = 2;
+            this.guna2ClientID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2ClientID.DefaultText = "";
+            this.guna2ClientID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2ClientID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2ClientID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2ClientID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2ClientID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ClientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ClientID.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.guna2ClientID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ClientID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ClientID.Location = new System.Drawing.Point(206, 55);
+            this.guna2ClientID.Name = "guna2ClientID";
+            this.guna2ClientID.PasswordChar = '\0';
+            this.guna2ClientID.PlaceholderText = "";
+            this.guna2ClientID.SelectedText = "";
+            this.guna2ClientID.Size = new System.Drawing.Size(155, 25);
+            this.guna2ClientID.TabIndex = 4;
+            // 
+            // labelReservation
+            // 
+            this.labelReservation.AutoSize = true;
+            this.labelReservation.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelReservation.Location = new System.Drawing.Point(236, 34);
+            this.labelReservation.Name = "labelReservation";
+            this.labelReservation.Size = new System.Drawing.Size(97, 16);
+            this.labelReservation.TabIndex = 1;
+            this.labelReservation.Text = "Reservation ID";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox1.BorderRadius = 6;
+            this.guna2ComboBox1.BorderThickness = 2;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ComboBox1.ItemHeight = 19;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(422, 55);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(155, 25);
+            this.guna2ComboBox1.TabIndex = 51;
+            // 
+            // labelRoom
+            // 
+            this.labelRoom.AutoSize = true;
+            this.labelRoom.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelRoom.Location = new System.Drawing.Point(478, 34);
+            this.labelRoom.Name = "labelRoom";
+            this.labelRoom.Size = new System.Drawing.Size(42, 16);
+            this.labelRoom.TabIndex = 50;
+            this.labelRoom.Text = "Room";
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox2.BorderRadius = 6;
+            this.guna2ComboBox2.BorderThickness = 2;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ComboBox2.ItemHeight = 19;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(643, 55);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(155, 25);
+            this.guna2ComboBox2.TabIndex = 53;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            // 
+            // labelClient
+            // 
+            this.labelClient.AutoSize = true;
+            this.labelClient.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClient.Location = new System.Drawing.Point(699, 34);
+            this.labelClient.Name = "labelClient";
+            this.labelClient.Size = new System.Drawing.Size(43, 16);
+            this.labelClient.TabIndex = 52;
+            this.labelClient.Text = "Client";
+            this.labelClient.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.BorderRadius = 6;
+            this.guna2DateTimePicker1.BorderThickness = 2;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Inter", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(206, 126);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(215, 25);
+            this.guna2DateTimePicker1.TabIndex = 54;
+            this.guna2DateTimePicker1.UseTransparentBackground = true;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Animated = true;
+            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.BorderRadius = 6;
+            this.guna2DateTimePicker2.BorderThickness = 2;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Inter", 9F);
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(583, 126);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 25);
+            this.guna2DateTimePicker2.TabIndex = 55;
+            this.guna2DateTimePicker2.UseTransparentBackground = true;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
+            // 
+            // labelCheckInDate
+            // 
+            this.labelCheckInDate.AutoSize = true;
+            this.labelCheckInDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelCheckInDate.Location = new System.Drawing.Point(264, 104);
+            this.labelCheckInDate.Name = "labelCheckInDate";
+            this.labelCheckInDate.Size = new System.Drawing.Size(94, 16);
+            this.labelCheckInDate.TabIndex = 56;
+            this.labelCheckInDate.Text = "Check In Date";
+            // 
+            // labelCheckOutDate
+            // 
+            this.labelCheckOutDate.AutoSize = true;
+            this.labelCheckOutDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelCheckOutDate.Location = new System.Drawing.Point(643, 105);
+            this.labelCheckOutDate.Name = "labelCheckOutDate";
+            this.labelCheckOutDate.Size = new System.Drawing.Size(106, 16);
+            this.labelCheckOutDate.TabIndex = 57;
+            this.labelCheckOutDate.Text = "Check Out Date";
             // 
             // ReservationsFormResponsive
             // 
@@ -429,9 +480,10 @@
             this.Name = "ReservationsFormResponsive";
             this.Text = "Reservations";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelTopRoom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Reservation)).EndInit();
+            this.panelBottomRoom.ResumeLayout(false);
+            this.panelBottomRoom.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -439,32 +491,26 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader placeholder;
-        private System.Windows.Forms.ColumnHeader ReservationID;
-        private System.Windows.Forms.ColumnHeader ReservationClient;
-        private System.Windows.Forms.ColumnHeader ReservationRoom;
-        private System.Windows.Forms.ColumnHeader ReservationCheckInDate;
-        private System.Windows.Forms.ColumnHeader ReservationCheckOutDate;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBoxRoomType;
-        private System.Windows.Forms.TextBox tbReservationID;
-        private System.Windows.Forms.DateTimePicker dtpCheckInDate;
-        private System.Windows.Forms.Label lblRoom;
-        private System.Windows.Forms.Label lblReservationID;
-        private System.Windows.Forms.Label lblClient;
-        private System.Windows.Forms.Label lblCheckInDate;
-        private System.Windows.Forms.DateTimePicker dtpCheckOutDate;
-        private System.Windows.Forms.Label lblCheckOutDate;
-        private System.Windows.Forms.Label labelClearClientDetails;
-        private System.Windows.Forms.Label labelDeleteClient;
-        private System.Windows.Forms.Label labelUpdateClient;
-        private System.Windows.Forms.Label labelSaveClient;
+        private System.Windows.Forms.Panel panelTopRoom;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_Reservation;
+        private System.Windows.Forms.Panel panelBottomRoom;
+        private System.Windows.Forms.Label labelClearClientRoom;
+        private System.Windows.Forms.Label labelDeleteRoom;
+        private System.Windows.Forms.Label labelUpdateRoom;
+        private System.Windows.Forms.Label labelSaveRoom;
         private FontAwesome.Sharp.IconButton btnClearClientDetails;
         private FontAwesome.Sharp.IconButton btnDeleteClient;
         private FontAwesome.Sharp.IconButton btnUpdateClient;
         private FontAwesome.Sharp.IconButton btnSaveClient;
+        private Guna.UI2.WinForms.Guna2TextBox guna2ClientID;
+        private System.Windows.Forms.Label labelReservation;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private System.Windows.Forms.Label labelClient;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private System.Windows.Forms.Label labelRoom;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private System.Windows.Forms.Label labelCheckOutDate;
+        private System.Windows.Forms.Label labelCheckInDate;
     }
 }
