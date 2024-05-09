@@ -48,7 +48,16 @@ namespace HotelProject.Forms
             if (textBoxRoomNumber.Text == "")
             {
                 MessageBox.Show("Room Number - Required Field", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
+            }
+            else if (textBoxRoomPhone.Text == "")
+            {
+                MessageBox.Show("Room Phone - Required Field", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radButFree.Checked == false && radButBusy.Checked == false)
+            {
+                MessageBox.Show("Please select room status", "Room Status", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
                 int roomNumber = Convert.ToInt32(textBoxRoomNumber.Text);
                 string roomPhone = textBoxRoomPhone.Text;
@@ -74,14 +83,22 @@ namespace HotelProject.Forms
                     MessageBox.Show(ex.Message);
                 }
             }
-
         }
         private void btnUpdateRoom_Click(object sender, EventArgs e)
         {
             if (textBoxRoomNumber.Text == "")
             {
                 MessageBox.Show("Room Number - Required Field", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
+            }
+            else if (radButFree.Checked == false && radButBusy.Checked == false)
+            {
+                MessageBox.Show("Please select room status", "Room Status", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (textBoxRoomPhone.Text == "")
+            {
+                MessageBox.Show("Room Phone - Required Field", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
             {
                 int roomNumber = Convert.ToInt32(textBoxRoomNumber.Text);
                 string roomPhone = textBoxRoomPhone.Text;

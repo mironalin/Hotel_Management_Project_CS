@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelTopRoom = new System.Windows.Forms.Panel();
-            this.dataGridView_Client = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelBottomRoom = new System.Windows.Forms.Panel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientEmail = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientAddress = new System.Windows.Forms.Label();
             this.labelClientPhone = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientLastName = new System.Windows.Forms.Label();
             this.labelClearClientRoom = new System.Windows.Forms.Label();
             this.labelDeleteRoom = new System.Windows.Forms.Label();
@@ -51,14 +52,27 @@
             this.btnDeleteClient = new FontAwesome.Sharp.IconButton();
             this.btnUpdateClient = new FontAwesome.Sharp.IconButton();
             this.btnSaveClient = new FontAwesome.Sharp.IconButton();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ClientID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxClientID = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientID = new System.Windows.Forms.Label();
             this.labelClientFirstName = new System.Windows.Forms.Label();
+            this.dataGridView_Client = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.errPrvClientID = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errPrvClientFirstName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errPrvClientLastName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errPrvClientAddress = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errPrvClientPhone = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errPrvClientEmail = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopRoom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).BeginInit();
             this.panelBottomRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientLastName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientPhone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -87,70 +101,16 @@
             this.panelTopRoom.Size = new System.Drawing.Size(994, 244);
             this.panelTopRoom.TabIndex = 0;
             // 
-            // dataGridView_Client
-            // 
-            this.dataGridView_Client.AllowUserToAddRows = false;
-            this.dataGridView_Client.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dataGridView_Client.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dataGridView_Client.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Client.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridView_Client.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Client.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridView_Client.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_Client.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_Client.Location = new System.Drawing.Point(14, 14);
-            this.dataGridView_Client.Name = "dataGridView_Client";
-            this.dataGridView_Client.ReadOnly = true;
-            this.dataGridView_Client.RowHeadersVisible = false;
-            this.dataGridView_Client.Size = new System.Drawing.Size(966, 216);
-            this.dataGridView_Client.TabIndex = 0;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_Client.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.Height = 23;
-            this.dataGridView_Client.ThemeStyle.ReadOnly = true;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.Height = 22;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // panelBottomRoom
             // 
             this.panelBottomRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelBottomRoom.Controls.Add(this.guna2TextBox3);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientEmail);
             this.panelBottomRoom.Controls.Add(this.labelClientEmail);
-            this.panelBottomRoom.Controls.Add(this.guna2TextBox4);
-            this.panelBottomRoom.Controls.Add(this.guna2TextBox5);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientPhone);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientAddress);
             this.panelBottomRoom.Controls.Add(this.labelClientAddress);
             this.panelBottomRoom.Controls.Add(this.labelClientPhone);
-            this.panelBottomRoom.Controls.Add(this.guna2TextBox1);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientLastName);
             this.panelBottomRoom.Controls.Add(this.labelClientLastName);
             this.panelBottomRoom.Controls.Add(this.labelClearClientRoom);
             this.panelBottomRoom.Controls.Add(this.labelDeleteRoom);
@@ -160,8 +120,8 @@
             this.panelBottomRoom.Controls.Add(this.btnDeleteClient);
             this.panelBottomRoom.Controls.Add(this.btnUpdateClient);
             this.panelBottomRoom.Controls.Add(this.btnSaveClient);
-            this.panelBottomRoom.Controls.Add(this.guna2TextBox2);
-            this.panelBottomRoom.Controls.Add(this.guna2ClientID);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientFirstName);
+            this.panelBottomRoom.Controls.Add(this.textBoxClientID);
             this.panelBottomRoom.Controls.Add(this.labelClientID);
             this.panelBottomRoom.Controls.Add(this.labelClientFirstName);
             this.panelBottomRoom.Location = new System.Drawing.Point(3, 253);
@@ -169,30 +129,31 @@
             this.panelBottomRoom.Size = new System.Drawing.Size(994, 244);
             this.panelBottomRoom.TabIndex = 1;
             // 
-            // guna2TextBox3
+            // textBoxClientEmail
             // 
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2TextBox3.BorderRadius = 6;
-            this.guna2TextBox3.BorderThickness = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(683, 115);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(155, 25);
-            this.guna2TextBox3.TabIndex = 57;
+            this.textBoxClientEmail.Animated = true;
+            this.textBoxClientEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientEmail.BorderRadius = 6;
+            this.textBoxClientEmail.BorderThickness = 2;
+            this.textBoxClientEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientEmail.DefaultText = "";
+            this.textBoxClientEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientEmail.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientEmail.Location = new System.Drawing.Point(683, 115);
+            this.textBoxClientEmail.Name = "textBoxClientEmail";
+            this.textBoxClientEmail.PasswordChar = '\0';
+            this.textBoxClientEmail.PlaceholderText = "";
+            this.textBoxClientEmail.SelectedText = "";
+            this.textBoxClientEmail.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientEmail.TabIndex = 57;
+            this.textBoxClientEmail.Leave += new System.EventHandler(this.textBoxClientEmail_Leave);
             // 
             // labelClientEmail
             // 
@@ -204,55 +165,58 @@
             this.labelClientEmail.TabIndex = 56;
             this.labelClientEmail.Text = "Client Email";
             // 
-            // guna2TextBox4
+            // textBoxClientPhone
             // 
-            this.guna2TextBox4.Animated = true;
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2TextBox4.BorderRadius = 6;
-            this.guna2TextBox4.BorderThickness = 2;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(683, 67);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(155, 25);
-            this.guna2TextBox4.TabIndex = 55;
+            this.textBoxClientPhone.Animated = true;
+            this.textBoxClientPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientPhone.BorderRadius = 6;
+            this.textBoxClientPhone.BorderThickness = 2;
+            this.textBoxClientPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientPhone.DefaultText = "";
+            this.textBoxClientPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientPhone.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientPhone.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientPhone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientPhone.Location = new System.Drawing.Point(683, 67);
+            this.textBoxClientPhone.Name = "textBoxClientPhone";
+            this.textBoxClientPhone.PasswordChar = '\0';
+            this.textBoxClientPhone.PlaceholderText = "";
+            this.textBoxClientPhone.SelectedText = "";
+            this.textBoxClientPhone.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientPhone.TabIndex = 55;
+            this.textBoxClientPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxClientPhone_KeyPress);
             // 
-            // guna2TextBox5
+            // textBoxClientAddress
             // 
-            this.guna2TextBox5.Animated = true;
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2TextBox5.BorderRadius = 6;
-            this.guna2TextBox5.BorderThickness = 2;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(683, 20);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(155, 25);
-            this.guna2TextBox5.TabIndex = 54;
+            this.textBoxClientAddress.Animated = true;
+            this.textBoxClientAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientAddress.BorderRadius = 6;
+            this.textBoxClientAddress.BorderThickness = 2;
+            this.textBoxClientAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientAddress.DefaultText = "";
+            this.textBoxClientAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientAddress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientAddress.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientAddress.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientAddress.Location = new System.Drawing.Point(683, 20);
+            this.textBoxClientAddress.Name = "textBoxClientAddress";
+            this.textBoxClientAddress.PasswordChar = '\0';
+            this.textBoxClientAddress.PlaceholderText = "";
+            this.textBoxClientAddress.SelectedText = "";
+            this.textBoxClientAddress.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientAddress.TabIndex = 54;
+            this.textBoxClientAddress.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxClientAddress_Validating);
+            this.textBoxClientAddress.Validated += new System.EventHandler(this.textBoxClientAddress_Validated);
             // 
             // labelClientAddress
             // 
@@ -274,30 +238,31 @@
             this.labelClientPhone.TabIndex = 52;
             this.labelClientPhone.Text = "Client Phone";
             // 
-            // guna2TextBox1
+            // textBoxClientLastName
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(257, 115);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(155, 25);
-            this.guna2TextBox1.TabIndex = 51;
+            this.textBoxClientLastName.Animated = true;
+            this.textBoxClientLastName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientLastName.BorderRadius = 6;
+            this.textBoxClientLastName.BorderThickness = 2;
+            this.textBoxClientLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientLastName.DefaultText = "";
+            this.textBoxClientLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientLastName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientLastName.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientLastName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientLastName.Location = new System.Drawing.Point(257, 115);
+            this.textBoxClientLastName.Name = "textBoxClientLastName";
+            this.textBoxClientLastName.PasswordChar = '\0';
+            this.textBoxClientLastName.PlaceholderText = "";
+            this.textBoxClientLastName.SelectedText = "";
+            this.textBoxClientLastName.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientLastName.TabIndex = 51;
+            this.textBoxClientLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxClientLastName_KeyPress);
             // 
             // labelClientLastName
             // 
@@ -381,6 +346,7 @@
             this.btnClearClientDetails.Size = new System.Drawing.Size(48, 48);
             this.btnClearClientDetails.TabIndex = 45;
             this.btnClearClientDetails.UseVisualStyleBackColor = false;
+            this.btnClearClientDetails.Click += new System.EventHandler(this.btnClearClientDetails_Click);
             // 
             // btnDeleteClient
             // 
@@ -402,6 +368,7 @@
             this.btnDeleteClient.Size = new System.Drawing.Size(48, 48);
             this.btnDeleteClient.TabIndex = 44;
             this.btnDeleteClient.UseVisualStyleBackColor = false;
+            this.btnDeleteClient.Click += new System.EventHandler(this.btnDeleteClient_Click);
             // 
             // btnUpdateClient
             // 
@@ -423,6 +390,7 @@
             this.btnUpdateClient.Size = new System.Drawing.Size(48, 48);
             this.btnUpdateClient.TabIndex = 43;
             this.btnUpdateClient.UseVisualStyleBackColor = false;
+            this.btnUpdateClient.Click += new System.EventHandler(this.btnUpdateClient_Click);
             // 
             // btnSaveClient
             // 
@@ -443,56 +411,59 @@
             this.btnSaveClient.Size = new System.Drawing.Size(48, 48);
             this.btnSaveClient.TabIndex = 42;
             this.btnSaveClient.UseVisualStyleBackColor = false;
+            this.btnSaveClient.Click += new System.EventHandler(this.btnSaveClient_Click);
             // 
-            // guna2TextBox2
+            // textBoxClientFirstName
             // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2TextBox2.BorderRadius = 6;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(257, 67);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(155, 25);
-            this.guna2TextBox2.TabIndex = 7;
+            this.textBoxClientFirstName.Animated = true;
+            this.textBoxClientFirstName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientFirstName.BorderRadius = 6;
+            this.textBoxClientFirstName.BorderThickness = 2;
+            this.textBoxClientFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientFirstName.DefaultText = "";
+            this.textBoxClientFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientFirstName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientFirstName.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientFirstName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientFirstName.Location = new System.Drawing.Point(257, 67);
+            this.textBoxClientFirstName.Name = "textBoxClientFirstName";
+            this.textBoxClientFirstName.PasswordChar = '\0';
+            this.textBoxClientFirstName.PlaceholderText = "";
+            this.textBoxClientFirstName.SelectedText = "";
+            this.textBoxClientFirstName.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientFirstName.TabIndex = 7;
+            this.textBoxClientFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxClientFirstName_KeyPress);
             // 
-            // guna2ClientID
+            // textBoxClientID
             // 
-            this.guna2ClientID.Animated = true;
-            this.guna2ClientID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2ClientID.BorderRadius = 6;
-            this.guna2ClientID.BorderThickness = 2;
-            this.guna2ClientID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2ClientID.DefaultText = "";
-            this.guna2ClientID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2ClientID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2ClientID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2ClientID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2ClientID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2ClientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ClientID.Font = new System.Drawing.Font("Inter", 8.25F);
-            this.guna2ClientID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2ClientID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ClientID.Location = new System.Drawing.Point(257, 20);
-            this.guna2ClientID.Name = "guna2ClientID";
-            this.guna2ClientID.PasswordChar = '\0';
-            this.guna2ClientID.PlaceholderText = "";
-            this.guna2ClientID.SelectedText = "";
-            this.guna2ClientID.Size = new System.Drawing.Size(155, 25);
-            this.guna2ClientID.TabIndex = 4;
+            this.textBoxClientID.Animated = true;
+            this.textBoxClientID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.textBoxClientID.BorderRadius = 6;
+            this.textBoxClientID.BorderThickness = 2;
+            this.textBoxClientID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxClientID.DefaultText = "";
+            this.textBoxClientID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxClientID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxClientID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxClientID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.textBoxClientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientID.Font = new System.Drawing.Font("Inter", 8.25F);
+            this.textBoxClientID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxClientID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxClientID.Location = new System.Drawing.Point(257, 20);
+            this.textBoxClientID.Name = "textBoxClientID";
+            this.textBoxClientID.PasswordChar = '\0';
+            this.textBoxClientID.PlaceholderText = "";
+            this.textBoxClientID.SelectedText = "";
+            this.textBoxClientID.Size = new System.Drawing.Size(155, 25);
+            this.textBoxClientID.TabIndex = 4;
+            this.textBoxClientID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxClientID_KeyPress);
             // 
             // labelClientID
             // 
@@ -514,10 +485,108 @@
             this.labelClientFirstName.TabIndex = 0;
             this.labelClientFirstName.Text = "First Name";
             // 
+            // dataGridView_Client
+            // 
+            this.dataGridView_Client.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Inter", 9.75F);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            this.dataGridView_Client.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle34.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Client.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            this.dataGridView_Client.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle35.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Client.DefaultCellStyle = dataGridViewCellStyle35;
+            this.dataGridView_Client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_Client.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.Location = new System.Drawing.Point(14, 14);
+            this.dataGridView_Client.Name = "dataGridView_Client";
+            this.dataGridView_Client.ReadOnly = true;
+            this.dataGridView_Client.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle36.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Client.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            this.dataGridView_Client.RowHeadersVisible = false;
+            this.dataGridView_Client.RowTemplate.Height = 27;
+            this.dataGridView_Client.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Client.Size = new System.Drawing.Size(966, 216);
+            this.dataGridView_Client.TabIndex = 1;
+            this.dataGridView_Client.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Inter", 9.75F);
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Height = 35;
+            this.dataGridView_Client.ThemeStyle.ReadOnly = true;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Height = 27;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Client_CellClick);
+            // 
+            // errPrvClientID
+            // 
+            this.errPrvClientID.ContainerControl = this;
+            // 
+            // errPrvClientFirstName
+            // 
+            this.errPrvClientFirstName.ContainerControl = this;
+            // 
+            // errPrvClientLastName
+            // 
+            this.errPrvClientLastName.ContainerControl = this;
+            // 
+            // errPrvClientAddress
+            // 
+            this.errPrvClientAddress.ContainerControl = this;
+            // 
+            // errPrvClientPhone
+            // 
+            this.errPrvClientPhone.ContainerControl = this;
+            // 
+            // errPrvClientEmail
+            // 
+            this.errPrvClientEmail.ContainerControl = this;
+            // 
             // ClientsFormResponsive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -525,11 +594,18 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ClientsFormResponsive";
             this.Text = "Clients";
+            this.Load += new System.EventHandler(this.ClientsFormResponsive_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelTopRoom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).EndInit();
             this.panelBottomRoom.ResumeLayout(false);
             this.panelBottomRoom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientLastName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientPhone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errPrvClientEmail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -538,7 +614,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panelTopRoom;
-        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_Client;
         private System.Windows.Forms.Panel panelBottomRoom;
         private System.Windows.Forms.Label labelClearClientRoom;
         private System.Windows.Forms.Label labelDeleteRoom;
@@ -548,17 +623,24 @@
         private FontAwesome.Sharp.IconButton btnDeleteClient;
         private FontAwesome.Sharp.IconButton btnUpdateClient;
         private FontAwesome.Sharp.IconButton btnSaveClient;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2ClientID;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientID;
         private System.Windows.Forms.Label labelClientID;
         private System.Windows.Forms.Label labelClientFirstName;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientLastName;
         private System.Windows.Forms.Label labelClientLastName;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientEmail;
         private System.Windows.Forms.Label labelClientEmail;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientPhone;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxClientAddress;
         private System.Windows.Forms.Label labelClientAddress;
         private System.Windows.Forms.Label labelClientPhone;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_Client;
+        private System.Windows.Forms.ErrorProvider errPrvClientID;
+        private System.Windows.Forms.ErrorProvider errPrvClientFirstName;
+        private System.Windows.Forms.ErrorProvider errPrvClientLastName;
+        private System.Windows.Forms.ErrorProvider errPrvClientAddress;
+        private System.Windows.Forms.ErrorProvider errPrvClientPhone;
+        private System.Windows.Forms.ErrorProvider errPrvClientEmail;
     }
 }
