@@ -35,6 +35,14 @@
             this.panelTopRoom = new System.Windows.Forms.Panel();
             this.dataGridView_Reservation = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelBottomRoom = new System.Windows.Forms.Panel();
+            this.labelCheckOutDate = new System.Windows.Forms.Label();
+            this.labelCheckInDate = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelClient = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelRoom = new System.Windows.Forms.Label();
             this.labelClearClientRoom = new System.Windows.Forms.Label();
             this.labelDeleteRoom = new System.Windows.Forms.Label();
             this.labelUpdateRoom = new System.Windows.Forms.Label();
@@ -45,14 +53,6 @@
             this.btnSaveClient = new FontAwesome.Sharp.IconButton();
             this.guna2ClientID = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelReservation = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelRoom = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelClient = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.labelCheckInDate = new System.Windows.Forms.Label();
-            this.labelCheckOutDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Reservation)).BeginInit();
@@ -165,6 +165,136 @@
             this.panelBottomRoom.Size = new System.Drawing.Size(994, 244);
             this.panelBottomRoom.TabIndex = 1;
             this.panelBottomRoom.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBottomRoom_Paint);
+            // 
+            // labelCheckOutDate
+            // 
+            this.labelCheckOutDate.AutoSize = true;
+            this.labelCheckOutDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelCheckOutDate.Location = new System.Drawing.Point(643, 105);
+            this.labelCheckOutDate.Name = "labelCheckOutDate";
+            this.labelCheckOutDate.Size = new System.Drawing.Size(106, 16);
+            this.labelCheckOutDate.TabIndex = 57;
+            this.labelCheckOutDate.Text = "Check Out Date";
+            // 
+            // labelCheckInDate
+            // 
+            this.labelCheckInDate.AutoSize = true;
+            this.labelCheckInDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelCheckInDate.Location = new System.Drawing.Point(264, 104);
+            this.labelCheckInDate.Name = "labelCheckInDate";
+            this.labelCheckInDate.Size = new System.Drawing.Size(94, 16);
+            this.labelCheckInDate.TabIndex = 56;
+            this.labelCheckInDate.Text = "Check In Date";
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Animated = true;
+            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.BorderRadius = 6;
+            this.guna2DateTimePicker2.BorderThickness = 2;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Inter", 9F);
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker2.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(583, 126);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 25);
+            this.guna2DateTimePicker2.TabIndex = 55;
+            this.guna2DateTimePicker2.UseTransparentBackground = true;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.BorderRadius = 6;
+            this.guna2DateTimePicker1.BorderThickness = 2;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Inter", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2DateTimePicker1.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(206, 126);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(215, 25);
+            this.guna2DateTimePicker1.TabIndex = 54;
+            this.guna2DateTimePicker1.UseTransparentBackground = true;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox2.BorderRadius = 6;
+            this.guna2ComboBox2.BorderThickness = 2;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ComboBox2.ItemHeight = 19;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(643, 55);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(155, 25);
+            this.guna2ComboBox2.TabIndex = 53;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            // 
+            // labelClient
+            // 
+            this.labelClient.AutoSize = true;
+            this.labelClient.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelClient.Location = new System.Drawing.Point(699, 34);
+            this.labelClient.Name = "labelClient";
+            this.labelClient.Size = new System.Drawing.Size(43, 16);
+            this.labelClient.TabIndex = 52;
+            this.labelClient.Text = "Client";
+            this.labelClient.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox1.BorderRadius = 6;
+            this.guna2ComboBox1.BorderThickness = 2;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.guna2ComboBox1.ItemHeight = 19;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(422, 55);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(155, 25);
+            this.guna2ComboBox1.TabIndex = 51;
+            // 
+            // labelRoom
+            // 
+            this.labelRoom.AutoSize = true;
+            this.labelRoom.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelRoom.Location = new System.Drawing.Point(478, 34);
+            this.labelRoom.Name = "labelRoom";
+            this.labelRoom.Size = new System.Drawing.Size(42, 16);
+            this.labelRoom.TabIndex = 50;
+            this.labelRoom.Text = "Room";
             // 
             // labelClearClientRoom
             // 
@@ -336,136 +466,6 @@
             this.labelReservation.TabIndex = 1;
             this.labelReservation.Text = "Reservation ID";
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2ComboBox1.BorderRadius = 6;
-            this.guna2ComboBox1.BorderThickness = 2;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2ComboBox1.ItemHeight = 19;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(422, 55);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(155, 25);
-            this.guna2ComboBox1.TabIndex = 51;
-            // 
-            // labelRoom
-            // 
-            this.labelRoom.AutoSize = true;
-            this.labelRoom.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelRoom.Location = new System.Drawing.Point(478, 34);
-            this.labelRoom.Name = "labelRoom";
-            this.labelRoom.Size = new System.Drawing.Size(42, 16);
-            this.labelRoom.TabIndex = 50;
-            this.labelRoom.Text = "Room";
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2ComboBox2.BorderRadius = 6;
-            this.guna2ComboBox2.BorderThickness = 2;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2ComboBox2.ItemHeight = 19;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(643, 55);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(155, 25);
-            this.guna2ComboBox2.TabIndex = 53;
-            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
-            // 
-            // labelClient
-            // 
-            this.labelClient.AutoSize = true;
-            this.labelClient.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelClient.Location = new System.Drawing.Point(699, 34);
-            this.labelClient.Name = "labelClient";
-            this.labelClient.Size = new System.Drawing.Size(43, 16);
-            this.labelClient.TabIndex = 52;
-            this.labelClient.Text = "Client";
-            this.labelClient.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker1.BorderRadius = 6;
-            this.guna2DateTimePicker1.BorderThickness = 2;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Inter", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker1.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(206, 126);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(215, 25);
-            this.guna2DateTimePicker1.TabIndex = 54;
-            this.guna2DateTimePicker1.UseTransparentBackground = true;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.Animated = true;
-            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker2.BorderRadius = 6;
-            this.guna2DateTimePicker2.BorderThickness = 2;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Inter", 9F);
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.guna2DateTimePicker2.HoverState.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(583, 126);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 25);
-            this.guna2DateTimePicker2.TabIndex = 55;
-            this.guna2DateTimePicker2.UseTransparentBackground = true;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 4, 28, 15, 3, 51, 994);
-            // 
-            // labelCheckInDate
-            // 
-            this.labelCheckInDate.AutoSize = true;
-            this.labelCheckInDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelCheckInDate.Location = new System.Drawing.Point(264, 104);
-            this.labelCheckInDate.Name = "labelCheckInDate";
-            this.labelCheckInDate.Size = new System.Drawing.Size(94, 16);
-            this.labelCheckInDate.TabIndex = 56;
-            this.labelCheckInDate.Text = "Check In Date";
-            // 
-            // labelCheckOutDate
-            // 
-            this.labelCheckOutDate.AutoSize = true;
-            this.labelCheckOutDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelCheckOutDate.Location = new System.Drawing.Point(643, 105);
-            this.labelCheckOutDate.Name = "labelCheckOutDate";
-            this.labelCheckOutDate.Size = new System.Drawing.Size(106, 16);
-            this.labelCheckOutDate.TabIndex = 57;
-            this.labelCheckOutDate.Text = "Check Out Date";
-            // 
             // ReservationsFormResponsive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -475,7 +475,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Inter", 9.75F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "ReservationsFormResponsive";
             this.Text = "Reservations";

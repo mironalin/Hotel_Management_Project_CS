@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media;
 using FontAwesome.Sharp;
-using HotelProject.Entities;
+//using HotelProject.Entities;
 using HotelProject.Forms;
 using Color = System.Drawing.Color;
 
@@ -142,13 +142,13 @@ namespace HotelProject
             }
             Reset();
         }
-
+        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
+        
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -176,7 +176,7 @@ namespace HotelProject
         {
             WindowState = FormWindowState.Minimized;
         }
-
+        
         protected override void WndProc(ref Message m)
         {
             const int WM_NCCALCSIZE = 0x0083;
@@ -192,5 +192,6 @@ namespace HotelProject
         {
 
         }
+        
     }
 }
