@@ -258,5 +258,31 @@ namespace HotelProject.Forms
                 }
             }
         }
+
+        private void exportTXTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text File | *.txt";
+            saveFileDialog.Title = "Save clients as text file";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = File.CreateText(saveFileDialog.FileName))
+
+                {
+                    sw.WriteLine("ReservationID, ClientID, RoomNumber, CheckInDate, CheckOutDate");
+
+                    foreach (var reservation in reservations)
+                    {
+                        sw.WriteLine("\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\""
+                                    , reservation.ReservationID.ToString().Replace("\"", "\"\"")
+                                    , reservation.ClientID.ToString().Replace("\"", "\"\"")
+                                    , reservation.RoomNumber.ToString().Replace("\"", "\"\"")
+                                    , reservation.CheckInDate.ToString().Replace("\"", "\"\"")
+                                    , reservation.CheckOutDate.ToString().Replace("\"", "\"\""));
+                    }
+                }
+            }
+        }
     }
 }

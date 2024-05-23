@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // DashboardForm
+            // DashboardFormResponsive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "DashboardForm";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
+            this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Name = "DashboardFormResponsive";
             this.Text = "Dashboard";
             this.ResumeLayout(false);
 
