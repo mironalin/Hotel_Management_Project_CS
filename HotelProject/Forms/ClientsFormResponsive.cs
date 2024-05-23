@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace HotelProject.Forms
 {
@@ -292,6 +295,59 @@ namespace HotelProject.Forms
         private void textBoxClientAddress_Validated(object sender, EventArgs e)
         {
             errPrvClientAddress.SetError((Control)sender, string.Empty);
+        }
+
+        private void binaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream fs = File.Create(sfd.FileName))
+                {
+                    bf.Serialize(fs, clients);
+                }
+            }
+        }
+
+        private void clientsSerializeXML_Click(object sender, EventArgs e)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Client>));
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream fs = File.Create(sfd.FileName))
+                {
+                    serializer.Serialize(fs, clients);
+                }
+            }
+        }
+
+        private void exportTXTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text File | *.txt";
+            saveFileDialog.Title = "Save clients as text file";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = File.CreateText(saveFileDialog.FileName))
+                
+                {
+                    sw.WriteLine("FirstName, LastName, ClientAddress, ClientPhone, ClientEmail");
+
+                    foreach (var client in clients)
+                    {
+                        sw.WriteLine("\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\""
+                                    , client.ClientFirstName.Replace("\"", "\"\"")
+                                    , client.ClientLastName.Replace("\"", "\"\"")
+                                    , client.ClientAddress.Replace("\"", "\"\"")
+                                    , client.ClientPhone.Replace("\"", "\"\"")
+                                    , client.ClientEmail.Replace("\"", "\"\""));
+                    }
+                }
+            }
         }
     }
 }

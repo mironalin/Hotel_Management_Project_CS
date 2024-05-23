@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HotelProject.Forms
@@ -213,6 +216,33 @@ namespace HotelProject.Forms
             else
             {
                 errPrvRoomNumber.SetError((Control)sender, string.Empty);
+            }
+        }
+
+        private void roomsSerializeBinary_Click(object sender, EventArgs e)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream fs = File.Create(sfd.FileName))
+                {
+                    bf.Serialize(fs, rooms);
+                }
+            }
+        }
+
+        private void roomsSerializeXML_Click(object sender, EventArgs e)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Room>));
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream fs = File.Create(sfd.FileName))
+                {
+                    serializer.Serialize(fs, rooms);
+                }
             }
         }
     }

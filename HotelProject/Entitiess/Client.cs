@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
+    [Serializable]
     public class Client
     {
         public int ClientID {  get; set; }

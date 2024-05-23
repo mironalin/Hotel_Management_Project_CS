@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
+    [Serializable]
     public class Room
     {
         public int RoomNumber { get; set; }

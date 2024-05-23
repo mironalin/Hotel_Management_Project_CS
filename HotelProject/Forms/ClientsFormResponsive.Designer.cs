@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelTopRoom = new System.Windows.Forms.Panel();
+            this.dataGridView_Client = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelBottomRoom = new System.Windows.Forms.Panel();
             this.textBoxClientEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientEmail = new System.Windows.Forms.Label();
@@ -56,23 +57,28 @@
             this.textBoxClientID = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelClientID = new System.Windows.Forms.Label();
             this.labelClientFirstName = new System.Windows.Forms.Label();
-            this.dataGridView_Client = new Guna.UI2.WinForms.Guna2DataGridView();
             this.errPrvClientID = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPrvClientFirstName = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPrvClientLastName = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPrvClientAddress = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPrvClientPhone = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPrvClientEmail = new System.Windows.Forms.ErrorProvider(this.components);
+            this.clientsContextMenuStrip = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.serializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsSerializeBinary = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsSerializeXML = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportTXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopRoom.SuspendLayout();
-            this.panelBottomRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).BeginInit();
+            this.panelBottomRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientFirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientLastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientEmail)).BeginInit();
+            this.clientsContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -100,6 +106,79 @@
             this.panelTopRoom.Padding = new System.Windows.Forms.Padding(14);
             this.panelTopRoom.Size = new System.Drawing.Size(994, 244);
             this.panelTopRoom.TabIndex = 0;
+            // 
+            // dataGridView_Client
+            // 
+            this.dataGridView_Client.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_Client.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Client.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_Client.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Client.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView_Client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_Client.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.Location = new System.Drawing.Point(14, 14);
+            this.dataGridView_Client.Name = "dataGridView_Client";
+            this.dataGridView_Client.ReadOnly = true;
+            this.dataGridView_Client.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Client.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_Client.RowHeadersVisible = false;
+            this.dataGridView_Client.RowTemplate.Height = 27;
+            this.dataGridView_Client.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Client.Size = new System.Drawing.Size(966, 216);
+            this.dataGridView_Client.TabIndex = 1;
+            this.dataGridView_Client.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Inter", 9.75F);
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_Client.ThemeStyle.HeaderStyle.Height = 35;
+            this.dataGridView_Client.ThemeStyle.ReadOnly = true;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.Height = 27;
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView_Client.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Client_CellClick);
             // 
             // panelBottomRoom
             // 
@@ -485,79 +564,6 @@
             this.labelClientFirstName.TabIndex = 0;
             this.labelClientFirstName.Text = "First Name";
             // 
-            // dataGridView_Client
-            // 
-            this.dataGridView_Client.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Inter", 9.75F);
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
-            this.dataGridView_Client.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle34.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Client.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
-            this.dataGridView_Client.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle35.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Client.DefaultCellStyle = dataGridViewCellStyle35;
-            this.dataGridView_Client.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_Client.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.Location = new System.Drawing.Point(14, 14);
-            this.dataGridView_Client.Name = "dataGridView_Client";
-            this.dataGridView_Client.ReadOnly = true;
-            this.dataGridView_Client.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle36.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Client.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
-            this.dataGridView_Client.RowHeadersVisible = false;
-            this.dataGridView_Client.RowTemplate.Height = 27;
-            this.dataGridView_Client.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Client.Size = new System.Drawing.Size(966, 216);
-            this.dataGridView_Client.TabIndex = 1;
-            this.dataGridView_Client.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Inter", 9.75F);
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.dataGridView_Client.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView_Client.ThemeStyle.HeaderStyle.Height = 35;
-            this.dataGridView_Client.ThemeStyle.ReadOnly = true;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.Height = 27;
-            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.dataGridView_Client.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView_Client.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Client_CellClick);
-            // 
             // errPrvClientID
             // 
             this.errPrvClientID.ContainerControl = this;
@@ -582,6 +588,53 @@
             // 
             this.errPrvClientEmail.ContainerControl = this;
             // 
+            // clientsContextMenuStrip
+            // 
+            this.clientsContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.serializeToolStripMenuItem,
+            this.exportTXTToolStripMenuItem});
+            this.clientsContextMenuStrip.Name = "clientsContextMenuStrip";
+            this.clientsContextMenuStrip.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.clientsContextMenuStrip.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.clientsContextMenuStrip.RenderStyle.ColorTable = null;
+            this.clientsContextMenuStrip.RenderStyle.RoundedEdges = true;
+            this.clientsContextMenuStrip.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.clientsContextMenuStrip.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.clientsContextMenuStrip.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.clientsContextMenuStrip.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.clientsContextMenuStrip.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.clientsContextMenuStrip.Size = new System.Drawing.Size(131, 48);
+            // 
+            // serializeToolStripMenuItem
+            // 
+            this.serializeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientsSerializeBinary,
+            this.clientsSerializeXML});
+            this.serializeToolStripMenuItem.Name = "serializeToolStripMenuItem";
+            this.serializeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.serializeToolStripMenuItem.Text = "Serialize";
+            // 
+            // clientsSerializeBinary
+            // 
+            this.clientsSerializeBinary.Name = "clientsSerializeBinary";
+            this.clientsSerializeBinary.Size = new System.Drawing.Size(107, 22);
+            this.clientsSerializeBinary.Text = "Binary";
+            this.clientsSerializeBinary.Click += new System.EventHandler(this.binaryToolStripMenuItem_Click);
+            // 
+            // clientsSerializeXML
+            // 
+            this.clientsSerializeXML.Name = "clientsSerializeXML";
+            this.clientsSerializeXML.Size = new System.Drawing.Size(107, 22);
+            this.clientsSerializeXML.Text = "XML";
+            this.clientsSerializeXML.Click += new System.EventHandler(this.clientsSerializeXML_Click);
+            // 
+            // exportTXTToolStripMenuItem
+            // 
+            this.exportTXTToolStripMenuItem.Name = "exportTXTToolStripMenuItem";
+            this.exportTXTToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.exportTXTToolStripMenuItem.Text = "Export TXT";
+            this.exportTXTToolStripMenuItem.Click += new System.EventHandler(this.exportTXTToolStripMenuItem_Click);
+            // 
             // ClientsFormResponsive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -589,6 +642,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.ContextMenuStrip = this.clientsContextMenuStrip;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -597,15 +651,16 @@
             this.Load += new System.EventHandler(this.ClientsFormResponsive_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelTopRoom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).EndInit();
             this.panelBottomRoom.ResumeLayout(false);
             this.panelBottomRoom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Client)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientFirstName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientLastName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errPrvClientEmail)).EndInit();
+            this.clientsContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -642,5 +697,10 @@
         private System.Windows.Forms.ErrorProvider errPrvClientAddress;
         private System.Windows.Forms.ErrorProvider errPrvClientPhone;
         private System.Windows.Forms.ErrorProvider errPrvClientEmail;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip clientsContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem serializeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientsSerializeBinary;
+        private System.Windows.Forms.ToolStripMenuItem clientsSerializeXML;
+        private System.Windows.Forms.ToolStripMenuItem exportTXTToolStripMenuItem;
     }
 }

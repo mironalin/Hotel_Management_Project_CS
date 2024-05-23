@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace HotelProject
 {
+    [Serializable]
     public class Reservation
     {
         public int ReservationID { get; set; }
-        public Client Client { get; set; }
-        public Room Room { get; set; }
+        public int ClientID { get; set; }
+        public int RoomNumber { get; set; }
+        // public Client Client { get; set; }
+        // public Room Room { get; set; }
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set;}
 
@@ -20,11 +23,11 @@ namespace HotelProject
             CheckOutDate = DateTime.Now;
         }
 
-        public Reservation(int reservationID, Client client, Room room, DateTime checkInDate, DateTime checkOutDate)
+        public Reservation(int reservationID, int clientID, int roomNumber, DateTime checkInDate, DateTime checkOutDate)
         {
             ReservationID = reservationID;
-            Client = client;
-            Room = room;
+            ClientID = clientID;
+            RoomNumber = roomNumber;
             CheckInDate = checkInDate;
             CheckOutDate = checkOutDate;
         }
